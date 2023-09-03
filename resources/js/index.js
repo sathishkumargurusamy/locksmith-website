@@ -189,6 +189,12 @@ $(document).ready(function () {
   });
 
   // Contact form
+  function isValidEmail(email) {
+    let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    return emailRegex.test(email);
+  }
+
   $("#contact-form").submit(function (e) {
     e.preventDefault();
     let formData = {
@@ -202,14 +208,20 @@ $(document).ready(function () {
       formData.name === "" ||
       formData.number === "" ||
       formData.email === "" ||
-      formData.service === ""
+      formData.service === null
     ) {
       $(".form-message").html(
         "<p class='error'><i class='fa-solid fa-circle-exclamation fa-sm fa-shake' style='color: #ff0000;'></i> All fields are required.</p>"
       );
       return;
     }
-    if (formData.number.length < 10) {
+    if (!isValidEmail(formData.email)) {
+      $(".form-message").html(
+        "<p class='error'><i class='fa-solid fa-circle-exclamation fa-sm fa-shake' style='color: #ff0000;'></i> Invalid email address.</p>"
+      );
+      return;
+    }
+    if (formData.number.length != 10) {
       $(".form-message").html(
         "<p class='error'><i class='fa-solid fa-circle-exclamation fa-sm fa-shake' style='color: #ff0000;'></i> Invalid mobile number.</p>"
       );
@@ -221,17 +233,11 @@ $(document).ready(function () {
       type: "POST",
       url: "https://public.herotofu.com/v1/e7658f70-4a3c-11ee-ac97-dda96a2aa48a",
       data: formData,
-      success: function (response) {
-        if (response === "success") {
-          $("#message").html(
-            "<p class='success'><i class='fa-solid fa-circle-check fa-bounce fa-sm' style='color: #00ff1e;'></i>Email sent successfully.</p>"
-          );
-          $("#name, #number, #email, #service").val("");
-          return;
-        }
+      success: function () {
         $("#message").html(
-          "<p class='error'><i class='fa-solid fa-circle-exclamation fa-sm fa-shake' style='color: #ff0000;'>Email could not be sent. Please try again later.</p>"
+          "<p class='success'><i class='fa-solid fa-circle-check fa-sm' style='color: #00ff1e;'></i>Email sent successfully.</p>"
         );
+        $("#name, #number, #email, #service").val("");
       },
     });
   });

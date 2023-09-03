@@ -3,10 +3,6 @@
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
 }
-html {
-  overflow-x: hidden;
-  width: 100%;
-}
 body {
   margin: 0;
 }
@@ -14,7 +10,9 @@ a {
   text-decoration: none;
   color: unset;
 }
-
+section {
+  overflow: hidden;
+}
 .random-shapes {
   position: absolute;
   display: block;
