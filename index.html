@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Locksmith</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./resources/images/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./global/css/global.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./resources/css/animation.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/dc5299e23f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/index.js"></script>
+    <script src="./resources/js/animation.js"></script>
+  </head>
+
+  <body>
+    <!-- Header Starts-->
+    <header class="header">
+      <div class="container">
+        <div class="flex justify-content-between align-items-center">
+          <div class="brand-name">
+            <a href="index.html"
+              ><img alt="brand-logo" src="./resources/images/logo.png"
+            /></a>
+          </div>
+          <div class="flex align-items-center">
+            <span class="contact-icon cursor-pointer">
+              <a href="tel:880.762.009"
+                ><i class="fa-solid fa-phone-volume" style="color: #ff932e"></i
+              ></a>
+            </span>
+            <div class="contact-number">
+              <h4>Call us now</h4>
+              <h2>880.762.009</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Ends-->
+
+    <!-- Home section starts-->
+    <section
+      class="home-section flex justify-content-center align-items-center"
+    >
+      <div class="left-container flex-column">
+        <h1>
+          <span class="underline position-relative">locksmith</span> for auto,
+          home & business.
+        </h1>
+        <h4>
+          We offer auto, home and commercial locksmith pros services, call us
+          today!
+        </h4>
+        <a
+          href="tel:388.791.932"
+          class="call-button row justify-content-center align-items-center cursor-pointer"
+        >
+          <i class="fa-solid fa-phone-volume" style="color: white"></i>
+          388.791.932
+        </a>
+      </div>
+      <div class="right-container">
+        <div class="image-container position-relative">
+          <img
+            src="./resources/images/shapes/shape-1.svg"
+            alt="shape-1"
+            class="random-shapes shape-1"
+          />
+          <img
+            src="./resources/images/shapes/shape-2.svg"
+            alt="shape-2"
+            class="random-shapes shape-2"
+          />
+          <img
+            src="./resources/images/shapes/shape-4.svg"
+            alt="shape-4"
+            class="random-shapes shape-4"
+          />
+          <img
+            src="./resources/images/home-1.jpeg"
+            alt="home-1"
+            class="main-img animated-element--fade-in"
+          />
+          <div class="flex-column justify-content-center bubble bubble-1">
+            <span>
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <h4>Some text</h4>
+            <h3>Unbeatable prices</h3>
+          </div>
+          <div class="flex-column justify-content-center bubble bubble-2">
+            <span>
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <h4>Some text</h4>
+            <h3>24x7 hours open</h3>
+          </div>
+          <div class="flex-column justify-content-center bubble bubble-3">
+            <span>
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <h4>Some text</h4>
+            <h3>Fast arrival time</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home section ends-->
+
+    <!-- Services section starts -->
+    <section
+      class="services-section flex-column align-items-center justify-content-center animated-element--fade-in"
+    >
+      <h5 class="grey-sm-heading-1 text-center">Our Services</h5>
+      <h2 class="heading-1 text-center">Quality services with best price.</h2>
+      <div class="card-container flex flex-wrap">
+        <div class="card flex-column align-items-center">
+          <div
+            style="background-color: #ffe8ee"
+            class="icon flex align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-truck-fast fa-lg" style="color: #3e4562"></i>
+          </div>
+          <h3 class="text-center">All kind of Automobile service</h3>
+          <div id="auto-service"></div>
+        </div>
+        <div class="card flex-column align-items-center">
+          <div
+            style="background-color: #e2f4ff"
+            class="icon flex align-items-center justify-content-center"
+          >
+            <i
+              class="fa-solid fa-house-chimney fa-lg"
+              style="color: #3e4562"
+            ></i>
+          </div>
+          <h3 class="text-center">Residential & Home based services</h3>
+          <div id="home-service"></div>
+        </div>
+        <div class="card flex-column align-items-center">
+          <div
+            style="background-color: #fef6e3"
+            class="icon flex align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-briefcase fa-lg" style="color: #3e4562"></i>
+          </div>
+          <h3 class="text-center">Commercial service provider</h3>
+          <div id="commercial-service"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Services section ends -->
+
+    <!-- Aboutus section starts -->
+    <section
+      class="aboutus-section flex-column justify-content-center align-items-center"
+    >
+      <div class="container">
+        <h3 class="grey-sm-heading-1 text-left animated-element--fade-in">
+          About us
+        </h3>
+        <h2 class="heading-1 text-left animated-element--fade-in">
+          Locksmith Pros Provides 24/7 Services in USA.
+        </h2>
+        <div class="content flex flex-wrap align-items-center">
+          <div class="left-container animated-element--slide-in-left">
+            <div class="image-container">
+              <img
+                src="./resources/images/shapes/shape-3.svg"
+                alt="shape-3"
+                class="random-shapes shape-3"
+              />
+              <img
+                src="./resources/images/shapes/shape-2.svg"
+                alt="shape-2"
+                class="random-shapes shape-2"
+              />
+              <img
+                class="main-img"
+                src="./resources/images/home-1.jpeg"
+                alt="about-us-img"
+              />
+            </div>
+          </div>
+          <div
+            class="right-container flex-column animated-element--slide-in-right"
+          >
+            <div class="tab-panel flex">
+              <div class="tab-heading tab-heading--active" data-tab="tab1">
+                Who we are
+              </div>
+              <div class="tab-heading" data-tab="tab2">Vision</div>
+              <div class="tab-heading" data-tab="tab3">What we do</div>
+            </div>
+            <div id="tab1" class="tab-content active-tab">
+              <h1>Locksmith Pros Provides 24/7 Services in USA.</h1>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <br />
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <div id="customer-name" class="customer-name">
+                Daniel L.,
+                <span>CEO & Founder, Locksmith</span>
+              </div>
+              <img src="./resources/images/sign-1.png" alt="sign" />
+            </div>
+
+            <div id="tab2" class="tab-content">
+              <h1>Vision - Unlocking the Future, One Smile at a Time</h1>
+              <p>
+                Our vision is simple yet profound: We aim to redefine security,
+                making it more accessible, reliable, and convenient for every
+                home, business, and vehicle owner. We envision a world where you
+                feel safe and in control.
+              </p>
+              <p>
+                We constantly strive to stay ahead in the ever-evolving world of
+                security. From smart locks that enhance your home's convenience
+                to cutting-edge access control systems for businesses.
+              </p>
+            </div>
+
+            <div id="tab3" class="tab-content">
+              <h1>At Locksmith....</h1>
+              <p>
+                We take pride in offering a comprehensive range of locksmith
+                services that cater to the unique security needs of our valued
+                clients. With our expertise and commitment to excellence, we are
+                dedicated to ensuring your peace of mind in all areas of your
+                life, including your home, business, and vehicles.
+              </p>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Aboutus section ends -->
+
+    <!-- Completed Projects starts-->
+    <section
+      class="projects-section flex-column align-items-center justify-content-center"
+    >
+      <h5 class="heading-1 text-center animated-element--fade-in">
+        Completed 900+ Projects successfully.
+      </h5>
+      <div
+        class="cards-container flex flex-wrap justify-content-center align-items-center"
+      >
+        <div
+          style="background: #fff7ea"
+          class="card flex-column align-items-center animated-element--slide-in-left"
+        >
+          <h2 id="counter1">0</h2>
+          <h3>Completed Projects</h3>
+        </div>
+        <div
+          style="background: #ecf9ff"
+          class="card flex-column align-items-center animated-element--fade-in"
+        >
+          <h2 id="counter2">0</h2>
+          <h3>Expert workers</h3>
+        </div>
+        <div
+          style="background: #fff1f1"
+          class="card flex-column align-items-center animated-element--slide-in-right"
+        >
+          <h2 id="counter3">0</h2>
+          <h3>Global Customer</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Completed Projects ends-->
+
+    <!-- Chooseus section starts-->
+    <section
+      class="chooseus-section flex-column align-items-center justify-content-center position-relative"
+    >
+      <div class="container flex-column animated-element--fade-in">
+        <h3 class="grey-sm-heading-1 text-left">Why Choose us</h3>
+        <h2 class="heading-1 text-left">
+          We're quality service provider with love.
+        </h2>
+      </div>
+      <div class="cards-container flex flex-wrap animated-element--scale-up">
+        <div class="card">
+          <div
+            style="background-color: #fff2d8"
+            class="icon flex align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-paper-plane fa-lg" style="color: #3e4562"></i>
+          </div>
+          <h3>First Arrival Time</h3>
+          <h5>Our average arrival time is less than the time you scheduled.</h5>
+        </div>
+        <div class="card">
+          <div
+            style="background-color: #ddf2e3"
+            class="icon flex align-items-center justify-content-center"
+          >
+            <i
+              class="fa-solid fa-headphones-simple fa-lg"
+              style="color: #3e4562"
+            ></i>
+          </div>
+          <h3>24 Hours Open</h3>
+          <h5>
+            Locksmith pros service is available 24hrs a day for any emergency.
+          </h5>
+        </div>
+        <div class="card">
+          <div
+            style="background-color: #ffe8ee"
+            class="icon flex align-items-center justify-content-center"
+          >
+            <i class="fa-solid fa-percent fa-lg" style="color: #3e4562"></i>
+          </div>
+          <h3>Get Low price</h3>
+          <h5>
+            We offer fair and affordable prices for auto, home and commercial
+            locksmith services.
+          </h5>
+        </div>
+        <div class="card">
+          <div
+            style="background-color: #d9f0fe"
+            class="icon flex align-items-center justify-content-center"
+          >
+            <i
+              class="fa-solid fa-heart-circle-check fa-lg"
+              style="color: #3e4562"
+            ></i>
+          </div>
+          <h3>Quality Service</h3>
+          <h5>
+            We are ready and available for questions and we take pride in
+            offering best service.
+          </h5>
+        </div>
+      </div>
+      <img
+        src="./resources/images/shapes/scribble-2.svg"
+        alt="scribble-2"
+        class="scribble-2"
+      />
+      <img
+        src="./resources/images/shapes/shape-3.svg"
+        alt="shape-3"
+        class="random-shapes shape-3"
+      />
+    </section>
+    <!-- Chooseus section ends-->
+
+    <!--Testimonials sections starts -->
+    <section
+      class="testimonials-section flex align-items-end justify-content-center"
+    >
+      <div class="carousel-container flex">
+        <div class="left-container text-center position-relative">
+          <img
+            src="./resources/images/shapes/shape-2.svg"
+            alt="shape-2"
+            class="random-shapes shape-2"
+          />
+          <img
+            src="./resources/images/shapes/scribble-1.svg"
+            alt="scribble-1"
+            class="scribble-1"
+          />
+          <img
+            class="main-img"
+            id="customer-image"
+            src="./resources/images/testimonial-1.png"
+            alt="testimonial-1"
+          />
+        </div>
+        <div class="right-container flex-column">
+          <h5 class="grey-sm-heading-1">Testimonials</h5>
+          <h2 class="heading-1">What's Our Client Say About Us.</h2>
+          <h3>More Over <span>1500+ customers</span></h3>
+          <div class="flex message-content">
+            <div class="icon flex align-items-center justify-content-center">
+              <i class="fa-solid fa-quote-left fa-lg"></i>
+            </div>
+            <div>
+              <div id="message" class="message">
+                Just simply amazing. Feel lucky use their service. Highly
+                appriciate their service & Highly recommend to others.
+              </div>
+              <div class="navigator-icon flex align-items-center">
+                <i
+                  id="prev"
+                  class="fa-solid fa-arrow-left fa-lg cursor-pointer"
+                ></i>
+                <i
+                  id="next"
+                  class="fa-solid fa-arrow-right fa-lg cursor-pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Testimonials sections ends -->
+
+    <!-- FAQ section starts -->
+    <section class="faq-section flex align-items-center justify-content-center">
+      <div class="container flex-column animated-element--fade-in">
+        <div class="flex-column align-items-center justify-content-center">
+          <h5 class="grey-sm-heading-1 text-center">FAQ</h5>
+          <h2 class="heading-1 text-center">Question & Answers</h2>
+          <div class="cards-container flex flex-wrap"></div>
+        </div>
+        <div
+          class="contact-container flex justify-content-between position-relative"
+        >
+          <img
+            src="./resources/images/shapes/shape-3.svg"
+            alt="shape-3"
+            class="random-shapes shape-3"
+          />
+          <img
+            src="./resources/images/shapes/shape-2.svg"
+            alt="shape-2"
+            class="random-shapes shape-2"
+          />
+          <div class="content">
+            <h3 class="grey-sm-heading-1">Contact Us</h3>
+            <h2 class="heading-1">Need any kind of help?</h2>
+            <p>Call us for any emergency to this number</p>
+            <h4>537 470 8151</h4>
+          </div>
+          <div class="form-container">
+            <form
+              id="contact-form"
+              class="flex-column justify-content-center"
+              action="#"
+            >
+              <input id="name" class="text-box" placeholder="Name" />
+              <input
+                id="email"
+                type="email"
+                class="text-box"
+                placeholder="Email"
+              />
+              <input
+                type="number"
+                id="phone"
+                class="text-box"
+                placeholder="Phone"
+                maxlength="10"
+              />
+              <select id="service" class="select-box">
+                <option value="" disabled selected>Select Service</option>
+                <option value="Home service">Home service</option>
+                <option value="Commercial service">Commercial service</option>
+                <option value="Car service">Car service</option>
+              </select>
+              <div class="form-message"></div>
+              <button type="submit" class="button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ section ends -->
+
+    <!--Footer section starts-->
+    <footer
+      class="footer-section flex justify-content-center position-relative"
+    >
+      <div class="container flex">
+        <div class="brand">Locksmith.</div>
+        <div class="address flex-column justify-content-between">
+          <div>
+            <h2>Our Address</h2>
+            <p>
+              Locksmith Pros USA 5031 Fair Ave, <br />#636, North Hollywood, CA
+              91062<br />
+              (818) 579-9577
+            </p>
+          </div>
+          <h3>Copyright Locksmith &#169; 2023</h3>
+        </div>
+        <div class="contact">
+          <h3>Contact</h3>
+          <h4>(990)7304644340</h4>
+          <div class="icons flex">
+            <a href="#"
+              ><i class="fa-brands fa-facebook fa-lg" style="color: #5a5a5a"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-linkedin fa-lg" style="color: #5a5a5a"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-twitter fa-lg" style="color: #5a5a5a"></i
+            ></a>
+          </div>
+        </div>
+        <div class="payment flex-column justify-content-between">
+          <div>
+            <h2>We accept all major credit cards for fast and easy payment.</h2>
+            <img src="./resources/images/payment.png" alt="payment-modes" />
+          </div>
+          <div class="flex links">
+            <h3>Privacy Policy</h3>
+            <h3>Terms & Conditions</h3>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./resources/images/shapes/scribble-1.svg"
+        alt="scribble-1"
+        class="scribble-1"
+      />
+    </footer>
+    <!--Footer section ends-->
+  </body>
+</html>

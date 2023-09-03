@@ -1,0 +1,95 @@
+@keyframes bubble-1-anim {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 20px;
+  }
+}
+@keyframes bubble-2-anim {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 20px;
+  }
+}
+@keyframes bubble-3-anim {
+  from {
+    bottom: 0px;
+  }
+  to {
+    bottom: 140px;
+  }
+}
+@keyframes draw-line-anim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes jiggle-1 {
+  0%,
+  100% {
+    transform: rotate(324deg) scale(1);
+  }
+  25% {
+    transform: rotate(330deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(324deg) scale(1);
+  }
+  75% {
+    transform: rotate(318deg) scale(1.05);
+  }
+}
+@keyframes jiggle-2 {
+  0%,
+  100% {
+    transform: rotate(231deg);
+  }
+  25% {
+    transform: rotate(225deg);
+  }
+  50% {
+    transform: rotate(231deg);
+  }
+  75% {
+    transform: rotate(237deg);
+  }
+}
+
+/* Reveal Animation */
+.animated-element--fade-in {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animated-element--scale-up {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+.animated-element--slide-in-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animated-element--slide-in-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.animate-translate-final {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-scale-final {
+  transform: scale(1);
+}

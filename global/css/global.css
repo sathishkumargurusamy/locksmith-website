@@ -1,0 +1,97 @@
+:root {
+  /* Color pallete */
+  --primary: #ff932e;
+  --grey-1: #f2f2f2;
+  --grey-2: #7d848e;
+  --grey-3: #b9b9b9;
+  --shadow-1: #e6ebf1;
+  --blue-1: #315eff;
+  --blue-2: #2343b5;
+
+  /* Border radius */
+  --border-radius-4: 4px;
+  --border-radius-8: 8px;
+}
+/* Flex box */
+.flex {
+  display: flex;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+/* Justify content */
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: end;
+}
+/* Align item */
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-box {
+  font-size: 16px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #e1e1e1;
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  background: #fcfdff;
+}
+
+.text-box:focus,
+.select-box:focus {
+  border: 1px solid var(--primary);
+}
+
+.select-box {
+  font-size: 16px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #e1e1e1;
+  padding: 16px 0 16px 16px;
+  border-radius: 8px;
+  width: 100%;
+  background: #fcfdff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
