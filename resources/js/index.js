@@ -234,7 +234,7 @@ $(document).ready(function () {
       url: "https://public.herotofu.com/v1/e7658f70-4a3c-11ee-ac97-dda96a2aa48a",
       data: formData,
       success: function () {
-        $("#message").html(
+        $(".form-message").html(
           "<p class='success'><i class='fa-solid fa-circle-check fa-sm' style='color: #00ff1e;'></i>Email sent successfully.</p>"
         );
         $("#name, #number, #email, #service").val("");
