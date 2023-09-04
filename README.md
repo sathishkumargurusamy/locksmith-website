@@ -1,5 +1,3 @@
-Creating a README file for an HTML, CSS, and jQuery website is a crucial step to help users, collaborators, or yourself understand the project. Below is a template and description for such a README file:
-
 # Locksmith
 
 ## Demo
